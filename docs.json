@@ -1,0 +1,83 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "almond",
+  "name": "Lumina",
+  "description": "Set up your Lumina self-ordering kiosk, manage your menu, and delight guests from day one.",
+  "colors": {
+    "primary": "#0627f2",
+    "light": "#e1f651",
+    "dark": "#7a9a9d"
+  },
+  "favicon": "/favicon.ico",
+  "icons": {
+    "library": "lucide"
+  },
+  "styling": {
+    "eyebrows": "breadcrumbs"
+  },
+  "contextual": {
+    "options": ["copy", "view", "assistant", "mcp", "add-mcp"]
+  },
+  "navigation": {
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Home",
+          "icon": "house",
+          "href": "/"
+        },
+        {
+          "anchor": "Help",
+          "icon": "life-buoy",
+          "href": "mailto:support@onlumina.com"
+        }
+      ]
+    },
+    "directory": "card",
+    "groups": [
+      {
+        "group": "Get Started",
+        "icon": "rocket",
+        "expanded": true,
+        "pages": [
+          "introduction",
+          "quick-start"
+        ]
+      },
+      {
+        "group": "Kiosk Setup",
+        "icon": "monitor",
+        "expanded": true,
+        "pages": [
+          "kiosk-operations",
+          "menu-management",
+          "loyalty"
+        ]
+      },
+      {
+        "group": "Guides",
+        "icon": "book-open",
+        "expanded": true,
+        "pages": [
+          "migrating",
+          "troubleshooting"
+        ]
+      }
+    ]
+  },
+  "logo": {
+    "light": "https://media.brand.dev/c08e8704-a2e9-47a9-aa09-5ebc3955e377.png",
+    "dark": "https://media.brand.dev/c08e8704-a2e9-47a9-aa09-5ebc3955e377.png"
+  },
+  "navbar": {
+    "links": [],
+    "primary": {
+      "type": "button",
+      "label": "Download Remy",
+      "href": "https://onelink.to/remy"
+    }
+  },
+  "footer": {
+    "socials": {}
+  }
+}

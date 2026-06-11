@@ -1,0 +1,61 @@
+{
+  "projectType": "saas",
+  "projectName": "Lumina",
+  "projectDescription": "Lumina is a self-ordering kiosk platform for restaurants that integrates with Square for menus, payments, and loyalty.",
+  "theme": "luma",
+  "primaryColor": "#0627f2",
+  "lightColor": "#e1f651",
+  "darkColor": "#7a9a9d",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quick-start"
+            ]
+          },
+          {
+            "group": "Kiosk Setup",
+            "pages": [
+              "kiosk-operations",
+              "menu-management",
+              "loyalty"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "migrating",
+              "troubleshooting"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Self-ordering kiosk app for iPads",
+    "Square integration for menus, prices, and payments",
+    "Remy operator app for remote kiosk management",
+    "Kiosk profiles for multi-device and multi-location setups",
+    "Menu groups mirroring Square catalog categories",
+    "Promotional collections for featured items, discounts, and loyalty",
+    "Square Loyalty integration with guest enrollment at the kiosk",
+    "Item availability management (86'ing) per location",
+    "Customizable welcome screen with media and overlays",
+    "Secure kiosk lock mode with PIN-based admin access"
+  ],
+  "publicApiSurface": [
+    "Remy (operator app) — manage kiosks, profiles, menus, devices",
+    "Lumina Kiosk app — iPad guest-facing ordering interface",
+    "Square Integration — connect Square account, sync catalog",
+    "Devices tab — register and manage kiosk devices",
+    "Menus tab — create menus, menu groups, and collections",
+    "Locations tab — manage item availability per location",
+    "Profile settings — welcome experience, checkout, security PIN"
+  ]
+}

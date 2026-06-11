@@ -1,0 +1,99 @@
+---
+title: "Kiosk Operations: Profiles, Welcome Screen & Locking"
+sidebarTitle: "Kiosk Operations"
+description: "Manage registered Kiosks day-to-day using profiles in Remy, configure the welcome screen, and control device locking for secure guest-facing operation."
+---
+
+Once a Kiosk is registered, you manage it day-to-day through **profiles** in Remy and a few controls on the device itself. Profiles let you store a complete device configuration — welcome screen, menu, checkout settings, and security PIN — so you can apply a consistent experience across every device or switch setups on the fly. This guide walks you through working with profiles, setting up the welcome screen, and understanding how Kiosk locking works.
+
+## Profiles
+
+A **profile** is a saved Kiosk configuration. Profiles give you two key capabilities:
+
+- **Apply the same setup to multiple Kiosks** so every device runs an identical, consistent experience.
+- **Keep multiple configurations on hand** and switch a device between them as needed — for example, a lunch profile and a dinner profile, or a slimmed-down patio profile.
+
+### What a profile contains
+
+A profile bundles every device-level setting in one place:
+
+| Section | What it covers |
+|---|---|
+| **Welcome Experience** | Welcome screen media (image or video), overlays, and the optional welcome notice |
+| **Menu** | The menu the device shows guests, including any Collections you've added |
+| **Check Out experience** | Order types (e.g. dine-in, takeout), guest inputs (name, phone, etc.), and all other checkout settings |
+| **Security settings** | The 4-digit unlock PIN that exits kiosk mode |
+
+### Working with profiles in Remy
+
+<Steps>
+  <Step title="Create a new profile">
+    Select **Create a New Profile** in Remy and give it a name that clearly describes its purpose — for example, "Front counter", "Patio lunch", or "Dinner service".
+  </Step>
+  <Step title="Configure each section">
+    Work through the four sections — **Welcome Experience**, **Menu**, **Check Out**, and **Security** — and dial in the settings for this profile.
+  </Step>
+  <Step title="Assign the profile to a device">
+    During device registration, choose the profile using **Select Profile**. To switch an already-registered Kiosk to a different profile later, select the new profile from the device's settings — the new configuration applies immediately.
+  </Step>
+  <Step title="Rename profiles as you grow">
+    Use **Rename Profile** to keep names clear and meaningful as you add more profiles over time.
+  </Step>
+</Steps>
+
+<Note>
+  When you edit a profile, every Kiosk assigned to that profile updates automatically — no need to reconfigure each device by hand. If you run multiple stations or locations, build one profile per setup and assign it to every Kiosk that should run that configuration.
+</Note>
+
+## Welcome Screen
+
+The welcome screen is what guests see before they tap to start an order. You configure it in Remy under **Welcome Experience**.
+
+<Steps>
+  <Step title="Open Welcome Experience">
+    Navigate to the profile's **Welcome Experience** screen in Remy.
+  </Step>
+  <Step title="Upload your media">
+    Tap **Choose image or video for welcome screen** and upload your asset. The recommended image size is **1366 × 1024 px (4:3)**. You can use a still image or a looping video.
+  </Step>
+  <Step title="Toggle overlays">
+    Enable or disable the overlays that layer on top of the welcome screen:
+
+    - **Order Here**
+    - **Tap to Continue**
+    - **Pay by Tap**
+    - **No Cash**
+    - **Wait Time**
+  </Step>
+  <Step title="Add a Welcome Notice (optional)">
+    Turn on **Welcome Notice** and enter a short message to surface timely information to guests — for example, "Check out our new items!".
+  </Step>
+  <Step title="Save">
+    Save the profile. The updated welcome screen goes live on every device running that profile.
+  </Step>
+</Steps>
+
+## Locking
+
+Kiosk mode locks the iPad to the guest-facing ordering screen so customers can't access your settings or leave the app. The lock is built into the Lumina Kiosk app — you don't need iOS Guided Access.
+
+**When kiosk mode is on**, the device stays on the welcome and ordering screen at all times.
+
+**To return to operator controls**, a staff member follows these steps:
+
+1. Tap **Need Help?** on the Kiosk screen.
+2. Select **Go to Admin Dashboard**.
+3. Enter the security PIN when prompted: *"Enter the security PIN to access Admin Dashboard."*
+
+The PIN is the 4-digit unlock code set in the device's profile under **Security settings**. Keep it somewhere your team can access but guests cannot.
+
+---
+
+<CardGroup cols={2}>
+  <Card title="Menu Management" icon="utensils" href="/menu-management">
+    Build and organize the menu your Kiosk shows guests, including Collections and item modifiers.
+  </Card>
+  <Card title="Troubleshooting" icon="wrench" href="/troubleshooting">
+    Diagnose and resolve common Kiosk issues, from connectivity problems to display glitches.
+  </Card>
+</CardGroup>
