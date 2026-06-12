@@ -71,12 +71,7 @@
     "href": "https://onlumina.com"
   },
   "navbar": {
-    "links": [],
-    "primary": {
-      "type": "button",
-      "label": "Download Remy",
-      "href": "https://onelink.to/remy"
-    }
+    "links": []
   },
   "footer": {
     "socials": {}
