@@ -1,14 +1,14 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "almond",
+  "theme": "mint",
   "name": "Lumina",
   "description": "Set up your Lumina self-ordering kiosk, manage your menu, and delight guests from day one.",
   "colors": {
-    "primary": "#0627f2",
-    "light": "#e1f651",
-    "dark": "#7a9a9d"
+    "primary": "#0027F5",
+    "light": "#1BE7FF",
+    "dark": "#E6FF4F"
   },
-  "favicon": "/favicon.ico",
+  "favicon": "/logo/favicon.svg",
   "icons": {
     "library": "lucide"
   },
@@ -66,8 +66,9 @@
     ]
   },
   "logo": {
-    "light": "https://media.brand.dev/c08e8704-a2e9-47a9-aa09-5ebc3955e377.png",
-    "dark": "https://media.brand.dev/c08e8704-a2e9-47a9-aa09-5ebc3955e377.png"
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+    "href": "https://onlumina.com"
   },
   "navbar": {
     "links": [],
