@@ -25,11 +25,6 @@
           "anchor": "Home",
           "icon": "house",
           "href": "/"
-        },
-        {
-          "anchor": "Help",
-          "icon": "life-buoy",
-          "href": "mailto:support@onlumina.com"
         }
       ]
     },
