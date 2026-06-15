@@ -25,6 +25,11 @@
           "anchor": "Home",
           "icon": "house",
           "href": "/"
+        },
+        {
+        	"anchor": "What's New",
+        	"icon": "newspaper",
+        	"href": "/whats-new"
         }
       ]
     },
@@ -57,12 +62,6 @@
           "migrating",
           "troubleshooting"
         ]
-      },
-      {
-        "group": "What's New",
-        "icon": "sparkles",
-        "root": "whats-new",
-        "pages": []
       }
     ]
   },
