@@ -75,5 +75,10 @@
   },
   "footer": {
     "socials": {}
+  },
+  "integrations": {
+    "mixpanel": {
+      "projectToken": "099cfa49dfcb4fca4e6ff425488aba39"
+    }
   }
 }
