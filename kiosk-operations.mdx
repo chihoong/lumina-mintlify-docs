@@ -92,9 +92,19 @@ Locking the iPad keeps guests on the Lumina Kiosk app so they can't switch to ot
   </Step>
 </Steps>
 
+{/* UNVERIFIED: as of the April 2026 snapshot the App Lock control in RemoteControlSection.tsx is hard-disabled (disabled prop set to true, active/loading logic commented out) with its sublabel hardcoded to "Unavailable". Confirm whether the August release enabled it for the new Kiosk. If it did, replace this note with the remote lock steps. */}
+
 <Note>
-  Locking your Kiosks directly from Remy is coming soon, so you'll be able to lock and unlock devices remotely without touching the iPad.
+  Remy's **Remote Control** section shows an **App Lock** control for each Kiosk. On the new Lumina Kiosk app it currently reads **Unavailable** and cannot be used — lock the device with Guided Access on the iPad, as above.
+
+  On the classic **KIOSK** app, the **Kiosk Mode** switch in Remy does lock and unlock the device remotely. If you have migrated a device to the new app and can no longer lock it from Remy, this is why.
 </Note>
+
+### App Lock during pairing
+
+{/* UNVERIFIED: App Lock confirmed during pairing, and cancelling a pairing releasing the device cleanly, both post-date the April 2026 snapshot. Confirm against current main. Open question: if this turns out to be the same control as Remy's Remote Control App Lock, the "Unavailable" note above is what needs to change. */}
+
+Registering a Kiosk confirms **App Lock** before the pairing finishes, so a device does not come back as registered until that check has passed. If you cancel partway through registration, the device is released rather than left half-registered — you can start the pairing over without clearing anything first.
 
 ### Returning to operator controls
 
@@ -105,6 +115,35 @@ To reach operator settings inside the app, a staff member can:
 3. Enter the security PIN when prompted: *"Enter the security PIN to access Admin Dashboard."*
 
 The PIN is the 4-digit unlock code set in the device's profile under **Security settings**. Keep it somewhere your team can access but guests cannot.
+
+## Kiosk status in Remy
+
+The **Devices** tab lists every registered Kiosk with its current state:
+
+- **Online** — the Kiosk is connected and reporting in.
+- **Offline** — Remy cannot reach the Kiosk. See [Troubleshooting](/troubleshooting).
+- **Last active:** — when the Kiosk last reported in. Use this to tell a Kiosk that dropped a minute ago from one that has been down since yesterday.
+
+{/* UNVERIFIED: the live presence signal and the "within seconds" timing post-date the April 2026 snapshot. Online / Offline / Last active: are grounded; the detection latency is not. */}
+
+A Kiosk that loses its connection is reported as **Offline** within seconds.
+
+## Fast-Lane: check out at $0
+
+{/* UNVERIFIED: Fast-Lane is grounded on a direct product description (2026-09-02), not repo source — a fresh grep of the April 2026 snapshot returned zero matches for "fast-lane"/"fastlane". Confirm the exact toggle label and its navigation path in Remy before publish, then replace this note with a Steps block covering how to turn it on and off. */}
+
+**Fast-Lane** is a setting you turn on in Remy that makes every order on that Kiosk check out at **$0.00**. It is a device-level toggle, not a per-order action — there is no coupon to type in and nothing for your staff to do at the Kiosk while it is on.
+
+With Fast-Lane on, the Kiosk works exactly as it normally does. A guest browses the menu, builds an order, and checks out through the usual flow. The only difference is the total.
+
+What stays the same:
+
+- **Orders still reach the kitchen.** They print and route as usual, including to a KDS if you use one.
+- **Order data is still recorded, item by item.** You can still see how much of each item was ordered, so a Fast-Lane service reports the same way any other service does.
+
+Fast-Lane is intended for **prepaid events** — an organizer has paid a lump sum up front, and guests order freely against it without paying at the Kiosk.
+
+Turn Fast-Lane off in Remy to return the Kiosk to normal pricing.
 
 ---
 

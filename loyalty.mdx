@@ -10,6 +10,26 @@ Lumina connects directly to the loyalty program you already manage in Square. Yo
   Your loyalty program rules — how guests earn points, what rewards are available, and how points are redeemed — are configured in your **Square account**, not in Lumina. Make any changes to the program itself inside Square Dashboard or the Square Loyalty settings.
 </Note>
 
+## What guests see at the Kiosk
+
+With **Loyalty Program** turned on, the Kiosk adds these steps to the ordering flow:
+
+- **Start of the order** — an **Earn Rewards** prompt: *"Enter your phone number or email to earn rewards on this order!"* The guest enters a phone number or an email address. No account or password is required, and guests can skip this and order without loyalty.
+- **Guest is not enrolled** — the Kiosk shows **Enroll now**. The guest can join from the Kiosk.
+- **Guest is enrolled** — the Kiosk shows their point balance and the rewards they can redeem.
+- **Before checkout** — the Kiosk shows the points the current order will earn.
+- **Redeeming** — **Select reward to redeem** applies a reward to the order, which then appears as a **Reward** line in the order summary. **See eligible items** lists the qualifying products with **Points required** and **Your balance**. If the guest does not have enough points, the Kiosk shows **Not enough points**.
+
+Points are stored in Square, so a guest's balance is the same at the Kiosk as on your other Square channels.
+
+### If the Kiosk shows "Rewards Not Available"
+
+**Rewards Not Available** — *"This business does not have a rewards program set up."* — means the Kiosk could not find an active loyalty program in Square. Check, in order:
+
+1. Your Square Loyalty program is active in your Square account.
+2. The **Loyalty Program** toggle is on in Remy (see below).
+3. The Kiosk has been restarted since you turned the toggle on.
+
 ## Turn Square Loyalty on or off on the Kiosk
 
 Loyalty on the Kiosk is controlled by a single toggle in Remy — the same place whether you're switching it on or hiding it from guests.
@@ -43,6 +63,14 @@ To take loyalty off the Kiosk, follow the same path and flip the toggle the othe
   If you previously added a **Loyalty Program** or **Rewards** collection to the menu (see [Promote loyalty on the Kiosk menu](#promote-loyalty-on-the-kiosk-menu) below), remove that collection too — otherwise the menu will still route guests to the loyalty signup flow.
 </Tip>
 
+### Require phone verification
+
+{/* UNVERIFIED: this toggle is absent from the April 2026 repo snapshot. Confirm the exact label and where it sits in Remy, then replace the navigation path below with the confirmed one. */}
+
+**Require phone verification** controls whether a guest has to confirm their phone number before points are applied to an order. With it on, the Kiosk texts a code to the number the guest entered and the guest types it in to finish earning. With it off, the guest enters a phone number or email and the points are applied without a code step.
+
+To change it, open the app menu in Remy → **Square Integration** → toggle **Require phone verification** → restart the Kiosk.
+
 ## Promote loyalty on the Kiosk menu
 
 Beyond the built-in Earn Rewards button, you can spotlight your loyalty program directly on the menu using collections. This gives guests a clear path to sign up before they even start ordering.
@@ -50,7 +78,7 @@ Beyond the built-in Earn Rewards button, you can spotlight your loyalty program 
 1. In Remy's **Menus** tab, open **Collections** and add a **Loyalty Program** and/or **Rewards** highlight.
 2. Set a cover image for the collection. When a guest taps the cover image, they are taken directly into the rewards signup flow — Remy notes this behavior as: *"Tapping cover image will promote user signup."*
 
-Enrollment is handled through Square Loyalty, typically by phone number, so a guest's points follow them across every Square-powered channel your restaurant uses.
+Enrollment runs through Square Loyalty and accepts a phone number or an email address.
 
 <CardGroup cols={2}>
   <Card title="Menu Management" icon="utensils" href="/menu-management">
