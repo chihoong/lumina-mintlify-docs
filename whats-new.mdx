@@ -9,27 +9,51 @@ Updates, new features, and improvements across Lumina Kiosk and Remy — newest 
 <Update label="2026-08-26" tags={["Lumina Kiosk", "Remy"]}>
   ## The August update
 
-  Most of this release is work you no longer have to do. Guests join your rewards program with a phone number or an email and nothing else, kiosk registration finishes cleanly the first time, and your device list tells you the truth about what's actually running. It's already live on every kiosk — there's nothing to install.
+  Most of this release is work you no longer have to do. It's already live on every kiosk — there's nothing to install.
 
-  {/* PRE-PUBLISH CHECKLIST — every claim below marked UNVERIFIED post-dates the April 2026 repo snapshot and returned zero matches in it. Confirm each against current main before this page ships.
+  {/* PRE-PUBLISH CHECKLIST — every claim below post-dates the April 2026 repo snapshot and returned zero matches in it. Confirm each against current main before this page ships.
       1. Remy's "Require phone verification" toggle — exact label and location.
-      2. Fast-Lane — the exact toggle label and its navigation path in Remy. (Grounded on a direct product description, 2026-09-02, not repo source.)
-      3. App Lock confirmed during pairing, and cancel releasing the device cleanly.
+      2. Fast-Lane — the exact toggle label and its navigation path in Remy. (Grounded on a direct product description, 2026-09-02, not repo source.) NO SCREENSHOT: the only available capture (outputs/kiosk-remy-aug-2026-release/img/comp-order.png) shows a Comp100 coupon field and "See staff for $0 orders" — the superseded mechanism, which contradicts this copy. Needs a real Fast-Lane capture.
+      3. App Lock confirmed during pairing, and cancel releasing the device cleanly. NOTE: whats-new-kiosk-status.png shows "App lock · Verified" with the toggle ON, which sits oddly against kiosk-operations.mdx documenting Remy's remote App Lock as "Unavailable". Resolve which is current.
       4. "Within seconds" offline timing. (Online / Offline / Last active: are grounded; the latency is not.)
       5. Preset item options, and delete cleanup across menus, groups, collections and profiles.
       6. Image loading and memory, product grid smoothness, Android parity, Android 16.
       7. Barcode not-found feedback, phone verification code delivery, the menu reorder crash fix. */}
 
-  - **Rewards without an account.** A guest earns on an order by entering a phone number or an email address — no account, no app, no password. The kiosk asks once, at the start of the order: *"Enter your phone number or email to earn rewards on this order!"* Members see their point balance and what they can redeem; everyone else sees **Enroll now**. Your earn rules and rewards stay in Square, exactly where you manage them today. Whether guests have to confirm their phone number with a code before points are applied is its own toggle in Remy — see [Loyalty](/loyalty). If loyalty isn't switched on for your kiosk yet, that's a toggle in Remy too.
-  - **Fast-Lane, for prepaid events.** Turn Fast-Lane on in Remy and every order on that kiosk checks out at $0.00 — no coupon code, and nothing for your staff to do per order. Guests browse and order exactly as they normally would. Orders still reach the kitchen, and order data is still recorded item by item, so you know how much of each item went out. See [Kiosk Operations](/kiosk-operations).
-  - **Setup that finishes, and status you can trust.** Pairing confirms **App Lock** before it hands you a completed kiosk, and cancelling partway through releases the device cleanly, so nothing is left half-registered. In Remy's **Devices** list, every kiosk shows **Online** or **Offline** with its **Last active:** time — a kiosk that drops now shows as offline within seconds, instead of looking healthy while it's dark. See [Kiosk Operations](/kiosk-operations).
-  - **Nothing breaks behind you.** Delete a menu, a group, a collection, or a profile, and every reference to it goes with it — nothing is left pointing at something that no longer exists. Preset options also make setting up an item considerably shorter.
-  - **Quicker, everywhere.** Images load faster and the product grid scrolls more smoothly. Android tablets now run the same kiosk your iPads do, including devices on Android 16.
+  ### Rewards without an account
 
-  Also in this release: clearer feedback at the kiosk when a scanned barcode isn't found, more reliable delivery of phone verification codes, and a long list of smaller fixes — including a crash when reordering menu items.
+  A guest enters a phone number or an email at the start of the order — no account, no app, no password. Members see their balance and what they can redeem; everyone else sees **Enroll now**. Your earn rules stay in Square.
+
+  <Frame>
+    <img src="/images/Loyalty-Signin.png" alt="Kiosk prompt asking the guest to enter a phone number or email to earn rewards on this order" />
+  </Frame>
+
+  Whether guests confirm their number with a code is its own toggle — see [Loyalty](/loyalty).
+
+  ### Fast-Lane, for prepaid events
+
+  Turn Fast-Lane on in Remy and every order on that kiosk checks out at **$0.00** — no coupon code, nothing for staff to do per order. Orders still reach the kitchen, and item-by-item order data is still recorded. See [Kiosk Operations](/kiosk-operations).
+
+  ### Setup that finishes, and status you can trust
+
+  Pairing confirms **App Lock** before it hands you a finished kiosk, and cancelling partway releases the device cleanly. In **Devices**, every kiosk shows **Online** or **Offline** with its **Last active:** time — a kiosk that drops now shows as offline within seconds.
+
+  <Frame>
+    <img src="/images/whats-new-kiosk-status.png" alt="Remy device screen showing a disconnected kiosk, last active 33m ago, remote controls, and App lock verified" style={{ width: "45%" }} />
+  </Frame>
+
+  ### Nothing breaks behind you
+
+  Delete a menu, group, collection, or profile and every reference to it goes with it. Preset options make setting up an item shorter.
+
+  ### Quicker, everywhere
+
+  Images load faster and the product grid scrolls more smoothly. Android tablets now run the same kiosk your iPads do.
+
+  Also in this release: clearer feedback when a scanned barcode isn't found, more reliable delivery of phone verification codes, and a crash fix when reordering menu items.
 
   <Tip>
-    Everything here is already running on your kiosks. The only item that asks anything of you is loyalty — turn it on in [Remy](/loyalty), and guests see it on the next restart.
+    The only item that asks anything of you is loyalty — turn it on in [Remy](/loyalty), and guests see it on the next restart.
   </Tip>
 </Update>
 
