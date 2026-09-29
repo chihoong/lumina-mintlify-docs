@@ -128,6 +128,38 @@ The **Devices** tab lists every registered Kiosk with its current state:
 
 A Kiosk that loses its connection is reported as **Offline** within seconds.
 
+## Service charge
+
+A **service charge** adds a percentage-based fee to every order on a Kiosk. Use it to offset kiosk service fees. You turn it on per profile in Remy, so you can charge it on some Kiosks and not others.
+
+{/* UNVERIFIED: written from two screenshots only (Remy toggle and Kiosk order summary). Confirm the exact navigation path to the Customizations screen, the editable fields, and whether tax is calculated on the service charge. */}
+
+<Steps>
+  <Step title="Turn on Service Charge">
+    In Remy, open the profile's checkout settings and switch **Service Charge** on. It sits alongside the **Coupon Code**, **Gift Card**, **Tips**, and **Special Request** toggles.
+  </Step>
+  <Step title="Set the amount and label">
+    Tap **Customizations** to set the charge percentage and the label guests see. The row shows your current settings — for example, **1.5% · "Service fee"**.
+  </Step>
+  <Step title="Save">
+    Save the profile. Every Kiosk assigned to it starts charging the fee.
+  </Step>
+</Steps>
+
+<Frame>
+  <img src="/images/service-charge-remy.png" alt="Remy profile setup screen with the Service Charge toggle on and Customizations set to 1.5% Service fee" />
+</Frame>
+
+### What guests see
+
+The charge appears as its own line in the **Order Summary**, between **Subtotal** and **Tax**, using the label you chose. It is included in the **Total** the guest pays.
+
+<Frame>
+  <img src="/images/service-charge-kiosk.png" alt="Kiosk order summary showing a Service fee line between Subtotal and Tax" />
+</Frame>
+
+To stop charging the fee, switch **Service Charge** off in the profile.
+
 ## Fast-Lane: check out at $0
 
 {/* UNVERIFIED: Fast-Lane is grounded on a direct product description (2026-09-02), not repo source — a fresh grep of the April 2026 snapshot returned zero matches for "fast-lane"/"fastlane". Confirm the exact toggle label and its navigation path in Remy before publish, then replace this note with a Steps block covering how to turn it on and off. */}
