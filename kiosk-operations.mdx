@@ -132,56 +132,18 @@ The **Devices** tab lists every registered Kiosk with its current state:
 
 A Kiosk that loses its connection is reported as **Offline** within seconds.
 
-## Service charge
+## Checkout settings
 
-A **service charge** adds a percentage-based fee to every order on a Kiosk. Use it to offset kiosk service fees. You turn it on per profile in Remy, so you can charge it on some Kiosks and not others.
-
-{/* UNVERIFIED: written from two screenshots only (Remy toggle and Kiosk order summary). Confirm the exact navigation path to the Customizations screen, the editable fields, and whether tax is calculated on the service charge. */}
-
-<Steps>
-  <Step title="Turn on Service Charge">
-    In Remy, open the Kiosk profile, scroll down to **Other Checkout Settings**, and enable **Service Charge**.
-  </Step>
-  <Step title="Set the amount and label">
-    Tap **Customizations** to set the charge percentage and the label guests see. The row shows your current settings — for example, **1.5% · "Service fee"**.
-  </Step>
-  <Step title="Save">
-    Save the profile. Every Kiosk assigned to it starts charging the fee.
-  </Step>
-</Steps>
-
-### What guests see
-
-The charge appears as its own line in the **Order Summary**, between **Subtotal** and **Tax**, using the label you chose. It is included in the **Total** the guest pays.
-
-<Frame>
-  <img src="/images/service-charge-kiosk.png" alt="Kiosk order summary showing a Service fee line between Subtotal and Tax" />
-</Frame>
-
-To stop charging the fee, switch **Service Charge** off in the profile.
-
-## Fast-Lane: check out at $0
-
-{/* UNVERIFIED: Fast-Lane is grounded on a direct product description (2026-09-02), not repo source — a fresh grep of the April 2026 snapshot returned zero matches for "fast-lane"/"fastlane". Confirm the exact toggle label and its navigation path in Remy before publish, then replace this note with a Steps block covering how to turn it on and off. */}
-
-**Fast-Lane** is a setting you turn on in Remy that makes every order on that Kiosk check out at **$0.00**. It is a device-level toggle, not a per-order action — there is no coupon to type in and nothing for your staff to do at the Kiosk while it is on.
-
-With Fast-Lane on, the Kiosk works exactly as it normally does. A guest browses the menu, builds an order, and checks out through the usual flow. The only difference is the total.
-
-What stays the same:
-
-- **Orders still reach the kitchen.** They print and route as usual, including to a KDS if you use one.
-- **Order data is still recorded, item by item.** You can still see how much of each item was ordered, so a Fast-Lane service reports the same way any other service does.
-
-Fast-Lane is intended for **prepaid events** — an organizer has paid a lump sum up front, and guests order freely against it without paying at the Kiosk.
-
-Turn Fast-Lane off in Remy to return the Kiosk to normal pricing.
+Service charge, Fast-Lane, and the other checkout settings in a profile now live in [Checkout](/checkout).
 
 ---
 
 <CardGroup cols={2}>
   <Card title="Menu Management" icon="utensils" href="/menu-management">
     Build and organize the menu your Kiosk shows guests, including Collections and item modifiers.
+  </Card>
+  <Card title="Checkout" icon="credit-card" href="/checkout">
+    Configure $0 orders, discount and marketing codes, and the checkout experience in your profiles.
   </Card>
   <Card title="Troubleshooting" icon="wrench" href="/troubleshooting">
     Diagnose and resolve common Kiosk issues, from connectivity problems to display glitches.

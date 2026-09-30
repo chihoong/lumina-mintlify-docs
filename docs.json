@@ -51,6 +51,7 @@
         "pages": [
           "kiosk-operations",
           "menu-management",
+          "checkout",
           "loyalty",
           "team"
         ]

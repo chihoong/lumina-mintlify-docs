@@ -1,0 +1,92 @@
+---
+title: "Checkout"
+sidebarTitle: "Checkout"
+description: "Control how guests pay at the Kiosk: Square integration settings, discount and marketing codes, and the checkout experience in each profile."
+---
+
+Everything that shapes what happens when a guest pays lives here. Some settings apply to your whole Square integration. Others are set per profile in Remy, so different Kiosks can check out differently.
+
+## Square integration
+
+### Allow $0 orders
+
+By default, guests can't check out with a total of $0. Turn on **Allow $0 orders** if you want to let them, for example when a reward or discount covers the full order.
+
+{/* UNVERIFIED: the exact menu path, the control type (toggle vs. checkbox), the default state, and whether the setting applies per location or per business. Confirm against the Remy app. */}
+
+<Steps>
+  <Step title="Open your menu settings">
+    In Remy, go to the **Menu** tab and open **Square Integration**.
+  </Step>
+  <Step title="Turn on $0 orders">
+    Turn on **Allow $0 orders**.
+  </Step>
+</Steps>
+
+Turn the setting off again to go back to requiring a payment on every order.
+
+### Discount and marketing codes
+
+{/* UNVERIFIED: no source material yet for discount and marketing codes. Add how to turn them on in Remy, where guests enter a code on the Kiosk, how codes are created in Square, and how they differ from each other. */}
+
+## Checkout experience
+
+The **Check Out experience** section of a profile sets order types (for example dine-in and takeout), guest inputs (name, phone, and so on), and other checkout settings. For how profiles work, see [Kiosk Operations](/kiosk-operations#profiles).
+
+{/* UNVERIFIED: order types and guest inputs are only listed in the profile table. Add steps for configuring them once confirmed against Remy. */}
+
+### Service charge
+
+A **service charge** adds a percentage-based fee to every order on a Kiosk. Use it to offset kiosk service fees. You turn it on per profile in Remy, so you can charge it on some Kiosks and not others.
+
+{/* UNVERIFIED: written from two screenshots only (Remy toggle and Kiosk order summary). Confirm the exact navigation path to the Customizations screen, the editable fields, and whether tax is calculated on the service charge. */}
+
+<Steps>
+  <Step title="Turn on Service Charge">
+    In Remy, open the Kiosk profile, scroll down to **Other Checkout Settings**, and enable **Service Charge**.
+  </Step>
+  <Step title="Set the amount and label">
+    Tap **Customizations** to set the charge percentage and the label guests see. The row shows your current settings — for example, **1.5% · "Service fee"**.
+  </Step>
+  <Step title="Save">
+    Save the profile. Every Kiosk assigned to it starts charging the fee.
+  </Step>
+</Steps>
+
+#### What guests see
+
+The charge appears as its own line in the **Order Summary**, between **Subtotal** and **Tax**, using the label you chose. It is included in the **Total** the guest pays.
+
+<Frame>
+  <img src="/images/service-charge-kiosk.png" alt="Kiosk order summary showing a Service fee line between Subtotal and Tax" />
+</Frame>
+
+To stop charging the fee, switch **Service Charge** off in the profile.
+
+### Fast-Lane: check out at $0
+
+{/* UNVERIFIED: Fast-Lane is grounded on a direct product description (2026-09-02), not repo source — a fresh grep of the April 2026 snapshot returned zero matches for "fast-lane"/"fastlane". Confirm the exact toggle label and its navigation path in Remy before publish, then replace this note with a Steps block covering how to turn it on and off. */}
+
+**Fast-Lane** is a setting you turn on in Remy that makes every order on that Kiosk check out at **$0.00**. It is a device-level toggle, not a per-order action — there is no coupon to type in and nothing for your staff to do at the Kiosk while it is on.
+
+With Fast-Lane on, the Kiosk works exactly as it normally does. A guest browses the menu, builds an order, and checks out through the usual flow. The only difference is the total.
+
+What stays the same:
+
+- **Orders still reach the kitchen.** They print and route as usual, including to a KDS if you use one.
+- **Order data is still recorded, item by item.** You can still see how much of each item was ordered, so a Fast-Lane service reports the same way any other service does.
+
+Fast-Lane is intended for **prepaid events** — an organizer has paid a lump sum up front, and guests order freely against it without paying at the Kiosk.
+
+Turn Fast-Lane off in Remy to return the Kiosk to normal pricing.
+
+---
+
+<CardGroup cols={2}>
+  <Card title="Kiosk Operations" icon="tablet-screen-button" href="/kiosk-operations">
+    Manage profiles, the welcome screen, and device locking.
+  </Card>
+  <Card title="Menu Management" icon="utensils" href="/menu-management">
+    Keep your menu in sync with Square.
+  </Card>
+</CardGroup>
