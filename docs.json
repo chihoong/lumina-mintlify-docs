@@ -51,7 +51,8 @@
         "pages": [
           "kiosk-operations",
           "menu-management",
-          "loyalty"
+          "loyalty",
+          "team"
         ]
       },
       {

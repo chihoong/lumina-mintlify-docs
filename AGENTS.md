@@ -14,8 +14,10 @@
 
 ## Terminology
 
-{/* Add product-specific terms and preferred usage */}
-{/* Example: Use "workspace" not "project", "member" not "user" */}
+- **Remy** is the operator app. **Lumina Kiosk** is the guest-facing app.
+- Use "teammate" or "team" for people with Remy access to a business. Avoid bare "member" — it means a loyalty member elsewhere in these docs.
+- Roles are **Admin**, **Regular**, and **Custom**. Write "the Admin role" to avoid confusion with the kiosk **Admin Dashboard**, which is the PIN-protected screen on the device.
+- Team invites go out by text message. Write "invite", not "invitation".
 
 ## Style preferences
 
@@ -29,5 +31,5 @@
 
 ## Content boundaries
 
-{/* Define what should and shouldn't be documented */}
-{/* Example: Don't document internal admin features */}
+- Don't document server internals, API error codes, or rollout flag names.
+- Mark anything you can't confirm against the Remy app with an `{/* UNVERIFIED: ... */}` comment.

@@ -1,0 +1,157 @@
+---
+title: "Team Management in Remy: Invite Teammates, Roles & Location Access"
+sidebarTitle: "Team"
+description: "Invite teammates to Remy by text message, choose what each person can do, and limit them to the locations they work at."
+---
+
+Your Lumina account doesn't have to be a one-person job. With **Team** in Remy, an Admin can invite teammates by text message, give each person the access they need, and remove them when they move on.
+
+{/* UNVERIFIED: Team is rolled out per business behind a flag in Remy. Confirm it is generally available before publishing, or add a note that it is rolling out. */}
+
+<Note>
+  Only people with the **Admin** role, or a **Custom** role that includes **Account management**, can invite, edit, or remove teammates. Everyone else sees a read-only view of their own access.
+</Note>
+
+## Roles and permissions
+
+Every teammate has one of three roles.
+
+| Role | What they can do | Locations |
+|---|---|---|
+| **Admin** | Everything, including Square integration and managing the team | Always all locations |
+| **Regular** | Devices, kiosk profiles, menus, and location details — but not the team or Square integration | All, or only the ones you choose |
+| **Custom** | Only the areas you pick | All, or only the ones you choose |
+
+With a **Custom** role, you turn each area on or off:
+
+| Capability | What it covers |
+|---|---|
+| **Kiosk controls** | Devices, kiosk profiles, Kiosk Store |
+| **Menu management** | Menus, products, availability, announcements |
+| **Business & locations** | Location details and hours, Brand, Mobile App |
+| **Account management** | Team, Square integration, order settings |
+
+<Tip>
+  Start new teammates on **Regular**. Switch to **Custom** only when someone needs a narrower set of permissions.
+</Tip>
+
+## Invite a teammate
+
+<Steps>
+  <Step title="Open Team in Remy">
+    Open the app menu in Remy and tap **Team**. You'll see your current teammates under **Members** and anyone who hasn't joined yet under **Invited**.
+  </Step>
+  <Step title="Tap Invite">
+    Tap **Invite**. If your team is empty, tap **Invite a teammate** instead.
+  </Step>
+  <Step title="Enter their details">
+    Enter the person's **Name** (optional) and their mobile number. Invites are sent by text message.
+  </Step>
+  <Step title="Choose a role">
+    Pick **Admin**, **Regular**, or **Custom**. For **Custom**, tap **Edit** and switch on the capabilities they need.
+  </Step>
+  <Step title="Choose locations">
+    Leave **All locations** selected, or tap **Change** to pick specific locations. This row doesn't appear for Admins, who always have access to every location.
+  </Step>
+  <Step title="Send the invite">
+    Tap **Send invite**. Remy shows **Invite sent.** and the person appears under **Invited**.
+  </Step>
+</Steps>
+
+{/* UNVERIFIED: email invites are not offered yet in Remy. Add an email option here once the Send by picker ships. */}
+
+<Info>
+  Invites expire after 7 days. You can have one pending invite per phone number.
+</Info>
+
+### If the invite doesn't go out
+
+Sometimes the invite is saved but the text message isn't delivered. Remy shows **Invite created — not delivered**. Tap **Try sending again**, tap **Share link** to send the link yourself, or tap **Go to team list** and resend it later.
+
+## Manage pending invites
+
+Tap a pending invite under **Invited** to see its role, locations, who sent it, and when it expires. From there you can:
+
+- **Resend link** — sends the text again. This also renews an expired invite.
+- **Share link** — opens your phone's share sheet so you can send the link through any app.
+- **Revoke invite** — cancels the invite. The link stops working immediately, and you can send a new one later.
+
+## Accept an invite
+
+If you've been invited, here's what to expect.
+
+<Steps>
+  <Step title="Tap the link">
+    Open the text message and tap the link. Remy opens and shows **You're invited to** your business, with the role, permissions, and locations you've been given.
+  </Step>
+  <Step title="Accept and continue">
+    Tap **Accept and continue**. Remy texts a code to the number the invite was sent to.
+  </Step>
+  <Step title="Verify your number">
+    Enter the 6-digit code and tap **Verify & join**. If it doesn't arrive, wait for the countdown and tap **Send a new code**.
+  </Step>
+  <Step title="Add your name">
+    If your account doesn't have a name yet, enter the name your team should see and tap **Join**.
+  </Step>
+  <Step title="Go to your business">
+    Tap **Go to** your business to start using Remy.
+  </Step>
+</Steps>
+
+<Note>
+  You must verify the same phone number the invite was sent to. If you'd like to join with a different number, ask your Admin to send a new invite to it.
+</Note>
+
+## Edit or remove a teammate
+
+<Steps>
+  <Step title="Open the teammate">
+    In **Team**, tap the person under **Members**.
+  </Step>
+  <Step title="Make your changes">
+    Tap **Edit** next to **Role** to change their role, or next to **Locations** to change where they can work. Custom roles also have an **Edit** row for capabilities.
+  </Step>
+  <Step title="Save">
+    Tap **Save**. Remy shows **Changes saved**.
+  </Step>
+</Steps>
+
+To remove someone, tap **Remove from team** and confirm. They lose access straight away, and you can invite them again later.
+
+<Note>
+  Every business needs at least one Admin. If you're the only one, Remy stops you from changing your own role or removing yourself until you add another Admin.
+</Note>
+
+## What teammates see
+
+Permissions apply as soon as you save them — teammates don't need to sign out.
+
+- **Tabs and menu items** a person doesn't have access to are hidden.
+- **Screens they can't open** show **You don't have access to this**, with a prompt to ask an Admin.
+- **Teammates without Account management** see **Team** as a read-only **Your access** card showing their role, what they can do, and their locations.
+- **Removed teammates** see **You no longer have access** the next time Remy refreshes.
+
+### Limit a teammate to specific locations
+
+Location access controls which locations someone can see, and which devices and availability they can manage. Menus are shared across all locations.
+
+## Troubleshooting invites
+
+| What the invitee sees | What it means | What to do |
+|---|---|---|
+| **This invite has expired** | Invites last 7 days | Resend the invite from **Team** |
+| **This invite was cancelled** | An Admin revoked it | Send a new invite |
+| **This invite was sent to a different number** | The number they verified doesn't match | Invite the number they want to use |
+| **This invite has already been used** | Someone already accepted it | Send a new invite if needed |
+| **You're already on this team** | They're already a teammate | Nothing — they can sign in |
+
+---
+
+<CardGroup cols={2}>
+  <Card title="Kiosk Operations" icon="tablet-screen-button" href="/kiosk-operations">
+    Manage devices, profiles, the welcome screen, and locking — all controlled by the **Kiosk controls** capability.
+  </Card>
+  <Card title="Menu Management" icon="utensils" href="/menu-management">
+    Build and organize your menu — controlled by the **Menu management** capability.
+  </Card>
+</CardGroup>
