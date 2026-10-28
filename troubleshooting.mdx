@@ -18,7 +18,9 @@ A Kiosk that can't reach the internet shows **Offline** in Remy's **Devices** li
     Unplug the router from power, wait about 10 seconds, then plug it back in. Give it a full minute to come back online before checking the Kiosk again.
   </Step>
   <Step title="Restart the Kiosk app">
-    Use the **Restart App** option to reload the Kiosk app without rebooting the iPad. This refreshes the connection without interrupting other processes on the device.
+    In Remy, go to the **Devices** tab, open the Kiosk, and tap **Restart App**. The Kiosk app reloads without rebooting the iPad.
+
+    {/* UNVERIFIED: confirm the exact button label ("Restart App" vs. "Restart app") and whether it sits under Remote Control on the device screen. */}
   </Step>
   <Step title="Restart the iPad">
     If the app restart didn't help, restart the iPad hardware. After it boots back up, reopen the Kiosk app and confirm the Kiosk is back online in Remy's **Devices** list.
@@ -43,6 +45,27 @@ The Square reader pairs with the iPad over Bluetooth through Square's own pairin
     If the reader still won't pair, restart the iPad and attempt pairing once more. Bluetooth pairing typically recovers after a full hardware reboot.
   </Step>
 </Steps>
+
+## Item missing or out of date on the Kiosk
+
+If an item doesn't appear on the Kiosk, or still shows after you moved or removed it, check, in order:
+
+<Steps>
+  <Step title="Check you edited the right Square category">
+    A mirrored menu group follows one Square category. Open the group in Remy and check the **Mirroring to [category name]** label, then make your change in that category in Square.
+  </Step>
+  <Step title="Check the item isn't archived in Square">
+    An archived item doesn't appear on the Kiosk. If you have two versions of the same item, make sure you're editing the one that isn't archived.
+  </Step>
+  <Step title="Check the item is available at this location in Square">
+    An item that isn't available at a location in Square won't appear on that location's Kiosk. This is separate from 86'ing an item in Remy. See [Menu Management](/menu-management#86ing-items).
+  </Step>
+  <Step title="Restart the Kiosk app">
+    In Remy, open the Kiosk in **Devices** and tap **Restart App**. The Kiosk reloads the menu.
+  </Step>
+</Steps>
+
+{/* UNVERIFIED: the Restart App step comes from one support thread. Confirm whether a restart is ever needed for a menu change to appear, or whether it was a one-off. */}
 
 ## Barcode scan not found
 
